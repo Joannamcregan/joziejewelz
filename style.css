@@ -1,0 +1,33 @@
+body{
+    background-image: linear-gradient(rgb(214, 222, 224) 5%, rgb(227, 221, 227) 8%, rgb(254, 249, 242) 20%, rgb(254, 249, 242) 90%, rgb(250, 242, 229) 95%);
+    padding-bottom: 50px;
+}
+#main-heading-section{
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    margin: auto;
+}
+#main-heading-section p{
+    text-align: right;
+}
+footer{
+    background-image: linear-gradient(rgb(247, 217, 214), rgb(251, 237, 216) 30%, rgb(247, 214, 222));
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+#mode-selector{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.tiny{
+    height: 40px;
+}
+.selected-glasses{
+    transform: rotate(-10deg);
+}

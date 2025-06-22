@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jozie Jewelz writes books with kinda fucked-up heroines and guys who are sexy and smart">
     <title>Books by Jozie Jewelz</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="images" href="img">
 </head>
 <body>
@@ -36,14 +37,23 @@
     <div id="bio">
         <p>Jozie Jewelz is the pen name of a Northeast Ohio-dwelling reader, writer, web developer, moderately sugar-addicted leftist and mother of one cool young human (who would like to share the <a href="kidscanlearn.space">space-themed math game</a> he helped design with any elementary school-aged humans you have in your life!)</p>
     </div>
+</body>
+<footer>
     <div id="mode-selector">
-        <picture id="sunglasses">
-            <source srcset="./img/sunglasses.webp" alt="a simple illustration of sunglasses with dark brown frames">
-            <img src="./img/sunglasses.jpg" alt="a simple illustration of sunglasses with dark brown frames"/>
+        <picture id="glasses" class="selected-glasses">
+            <source media="(max-width:580px)" srcset="./img/glasses_100.png" class="tiny">
+            <source media="(max-width:360px)" srcset="./img/glasses_80.png" class="tiny">
+            <img src="./img/glasses_150.png" alt="a simple illustration of glasses with black frames" class="tiny"/>
         </picture>
-        <picture id="glasses">
-            <source srcset="./img/glasses.webp" alt="a simple illustration of glasses with rose gold frames">
-            <img src="./img/glasses.jpg" alt="a simple illustration of glasses with rose gold frames"/>
+        <picture id="sepia-glasses">
+            <source media="(max-width:580px)" srcset="./img/sepia_glasses_100.png" class="tiny">
+            <source media="(max-width:360px)" srcset="./img/sepia_glasses_80.png" class="tiny">
+            <img src="./img/sepia_glasses_150.png" alt="a simple illustration of glasses with sepia lenses" class="tiny"/>
+        </picture>
+        <picture id="dark-glasses">
+            <source media="(max-width:580px)" srcset="./img/dark_glasses_100.png" class="tiny">
+            <source media="(max-width:360px)" srcset="./img/dark_glasses_80.png" class="tiny">
+            <img src="./img/dark_glasses_150.png" alt="a simple illustration of sunglasses with dark brown frames" class="tiny"/>
         </picture>
     </div>
-</body>
+</footer>
