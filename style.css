@@ -1,6 +1,14 @@
 body{
-    background-image: linear-gradient(rgb(239, 237, 235) 8%, rgb(254, 249, 242) 20%, rgb(254, 249, 242) 90%, rgb(250, 242, 229) 95%);
-    padding-bottom: 50px;
+    padding: 20px 20px 50px 20px;
+}
+body.light{
+    background-image: linear-gradient(rgb(237, 236, 235) 8%, rgb(245, 243, 240) 20%, rgb(237, 235, 235) 90%, rgb(237, 235, 235) 95%);
+}
+.centered-text{
+    text-align: center;
+}
+.hidden{
+    display: none;
 }
 #main-heading-section{
     width: fit-content;
@@ -11,14 +19,62 @@ body{
 }
 #main-heading-section p{
     text-align: right;
+    font-size: 18px;
+}
+div.book-info{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 5px 20px 10px 20px;
+}
+div.book-info h2{
+    margin-bottom: 0;
+}
+div.book-info img{
+    display: block;
+    margin: auto;
+}
+body.light div.book-info{
+    color: #272727;
+    box-shadow:
+    0 0 10px 6px rgba(0, 255, 153, 0.3),
+    0 0 14px 9px rgba(115, 0, 255, 0.3);
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+}
+.see-more{
+    text-align: right;
+    text-decoration: underline;
+}
+#bio{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 700px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+@media screen and (max-width: 410px) {
+  #bio{
+    flex-wrap: wrap;
+  }
+}
+#bio img{
+    border-radius: 50%;
+    box-shadow:
+    0 0 10px 6px rgba(0, 187, 255, 0.4),
+    0 0 14px 9px rgba(255, 89, 0, 0.3);
+    margin-right: 20px;
 }
 footer{
-    background-image: linear-gradient(rgb(247, 217, 214), rgb(251, 237, 216) 30%, rgb(247, 214, 222));
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 0;
+}
+footer.light{
+    background-image: linear-gradient(rgb(247, 217, 214), rgb(249, 238, 223) 30%, rgb(247, 214, 222));
+    box-shadow: 0px -4px 3px rgba(247, 214, 222, 0.75)
 }
 #mode-selector{
     display: flex;
