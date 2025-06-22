@@ -57,6 +57,9 @@ body.light div.book-info{
   #bio{
     flex-wrap: wrap;
   }
+  div.book-info{
+    padding: 5px 10px 10px 10px;
+  }
 }
 #bio img{
     border-radius: 50%;
