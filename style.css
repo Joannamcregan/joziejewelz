@@ -1,14 +1,17 @@
 @font-face {
     font-family: 'handwritten-heading';
     src: url('./fonts/Bobogo.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'handwritten-text';
     src: url('./fonts/Bobogo.otf');
+    font-display: swap;
 }
 @font-face {
     font-family: 'sans';
     src: url('./fonts/GeosansLight.ttf');
+    font-display: swap;
 }
 body{
     padding: 20px 20px 50px 20px;
@@ -33,9 +36,9 @@ body.light{
 }
 body.dark{
   --s: 81px; /* control the size*/
-  --c1: #161616;
+  --c1: #271b10;
   --c2: #1a1818;
-  --c3: #141414;
+  --c3: #232323;
   
   --p:at 45% 40%,#0000 75%,;
   --g1:conic-gradient(var(--p) var(--c1) 0);
@@ -230,7 +233,7 @@ footer.sepia{
     flex-wrap: nowrap;
     justify-content: center;
 }
-.tiny{
+.selection{
     height: 40px;
 }
 .selected-glasses{
