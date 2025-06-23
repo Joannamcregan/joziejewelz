@@ -31,8 +31,27 @@ body.light{
     var(--g1) var(--s) var(--s) var(--c3);
   background-size: calc(4*var(--s)) calc(2*var(--s));
 }
+body.dark{
+  --s: 81px; /* control the size*/
+  --c1: #161616;
+  --c2: #1a1818;
+  --c3: #141414;
+  
+  --p:at 45% 40%,#0000 75%,;
+  --g1:conic-gradient(var(--p) var(--c1) 0);
+  --g2:conic-gradient(var(--p) var(--c2) 0);
+  background:
+    var(--g1),var(--g2) calc(2*var(--s)) 0,
+    var(--g2) calc(3*var(--s)) var(--s),
+    var(--g1) var(--s) var(--s) var(--c3);
+  background-size: calc(4*var(--s)) calc(2*var(--s));
+  color: rgb(221, 221, 221);
+}
 body.light a{
     color:rgb(0, 68, 95);
+}
+body.dark a{
+    color:rgb(10, 175, 240);
 }
 .centered-text{
     text-align: center;
@@ -64,6 +83,12 @@ body.light #main-heading-section{
     0px 0px 7px rgb(253, 179, 202),
     0px 0px 11px white;
 }
+body.dark #main-heading-section{
+    text-shadow: 
+    0px 0px 3px rgb(250, 27, 98), 
+    0px 0px 7px rgb(102, 27, 51),
+    0px 0px 11px rgb(0, 0, 0);
+}
 div.book-info{
     max-width: 500px;
     margin: 50px auto;
@@ -84,6 +109,14 @@ body.light div.book-info{
     background-color: rgb(246, 246, 246);
     border-radius: 20px;
 }
+body.dark div.book-info{
+    color: #e8e8e8;
+    box-shadow:
+    0 0 10px 6px rgba(0, 255, 106, 0.5),
+    0 0 14px 9px rgba(179, 0, 255, 0.5);
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+}
 .see-more{
     text-align: right;
     text-decoration: underline;
@@ -100,6 +133,15 @@ body.light #bio img, body.light #bio p{
     box-shadow:
     0 0 10px 6px rgba(0, 187, 255, 0.4),
     0 0 14px 9px rgba(255, 89, 0, 0.3);
+    background: rgb(240, 239, 239);
+    color: #272727;
+}
+body.dark #bio img, body.dark #bio p{
+    box-shadow:
+    0 0 10px 6px rgba(0, 229, 255, 0.4),
+    0 0 14px 9px rgba(255, 174, 0, 0.3);
+    background: rgb(49, 49, 49);
+    color: white;
 }
 #bio img{
     border-radius: 50%;
@@ -107,7 +149,6 @@ body.light #bio img, body.light #bio p{
 }
 #bio p{
     padding: 10px;
-    background: rgb(240, 239, 239);
     border-radius: 20px;
 }
 footer{
@@ -120,6 +161,10 @@ footer{
 footer.light{
     background-image: linear-gradient(rgb(247, 217, 214), rgb(249, 238, 223) 30%, rgb(247, 214, 222));
     box-shadow: 0px -4px 3px rgba(247, 214, 222, 0.75)
+}
+footer.dark{
+    background-image: linear-gradient(rgb(85, 40, 36), rgb(125, 91, 65) 30%, rgb(89, 39, 51));
+    box-shadow: 0px -4px 3px rgba(85, 40, 36, 0.75)
 }
 #mode-selector{
     display: flex;
