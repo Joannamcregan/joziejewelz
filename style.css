@@ -1,8 +1,38 @@
+@font-face {
+    font-family: 'handwritten-heading';
+    src: url('./fonts/Bobogo.otf');
+}
+@font-face {
+    font-family: 'handwritten-text';
+    src: url('./fonts/Bobogo.otf');
+}
+@font-face {
+    font-family: 'sans';
+    src: url('./fonts/GeosansLight.ttf');
+}
 body{
     padding: 20px 20px 50px 20px;
+    font-family: 'sans', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
 }
 body.light{
-    background-image: linear-gradient(rgb(237, 236, 235) 8%, rgb(245, 243, 240) 20%, rgb(237, 235, 235) 90%, rgb(237, 235, 235) 95%);
+  --s: 81px; /* control the size*/
+  --c1: #ededed;
+  --c2: #f0ebeb;
+  --c3: #f0f0f0;
+  
+  --p:at 45% 40%,#0000 75%,;
+  --g1:conic-gradient(var(--p) var(--c1) 0);
+  --g2:conic-gradient(var(--p) var(--c2) 0);
+  background:
+    var(--g1),var(--g2) calc(2*var(--s)) 0,
+    var(--g2) calc(3*var(--s)) var(--s),
+    var(--g1) var(--s) var(--s) var(--c3);
+  background-size: calc(4*var(--s)) calc(2*var(--s));
+}
+body.light a{
+    color:rgb(0, 68, 95);
 }
 .centered-text{
     text-align: center;
@@ -17,9 +47,22 @@ body.light{
     display: block;
     margin: auto;
 }
+#main-heading-section h1{
+    font-family: 'handwritten-heading', serif;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
 #main-heading-section p{
     text-align: right;
-    font-size: 18px;
+    font-size: 30px;
+    font-family: 'handwritten-text', serif;
+    margin-top: 5px;
+}
+body.light #main-heading-section{
+    text-shadow: 
+    0px 0px 3px rgb(255, 142, 178), 
+    0px 0px 7px rgb(253, 179, 202),
+    0px 0px 11px white;
 }
 div.book-info{
     max-width: 500px;
@@ -53,20 +96,19 @@ body.light div.book-info{
     justify-content: center;
     margin: 30px auto;
 }
-@media screen and (max-width: 410px) {
-  #bio{
-    flex-wrap: wrap;
-  }
-  div.book-info{
-    padding: 5px 10px 10px 10px;
-  }
-}
-#bio img{
-    border-radius: 50%;
+body.light #bio img, body.light #bio p{
     box-shadow:
     0 0 10px 6px rgba(0, 187, 255, 0.4),
     0 0 14px 9px rgba(255, 89, 0, 0.3);
+}
+#bio img{
+    border-radius: 50%;
     margin-right: 20px;
+}
+#bio p{
+    padding: 10px;
+    background: rgb(240, 239, 239);
+    border-radius: 20px;
 }
 footer{
     position: fixed;
@@ -89,4 +131,12 @@ footer.light{
 }
 .selected-glasses{
     transform: rotate(-10deg);
+}
+@media screen and (max-width: 410px) {
+  #bio{
+    flex-wrap: wrap;
+  }
+  div.book-info{
+    padding: 5px 10px 10px 10px;
+  }
 }
