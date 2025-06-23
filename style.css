@@ -163,8 +163,8 @@ footer.light{
     box-shadow: 0px -4px 3px rgba(247, 214, 222, 0.75)
 }
 footer.dark{
-    background-image: linear-gradient(rgb(85, 40, 36), rgb(125, 91, 65) 30%, rgb(89, 39, 51));
-    box-shadow: 0px -4px 3px rgba(85, 40, 36, 0.75)
+    background-image: linear-gradient(rgb(255, 50, 102), rgb(252, 155, 114) 30%, rgb(202, 1, 71));
+    box-shadow: 0px -4px 3px rgba(255, 50, 102, 0.75)
 }
 #mode-selector{
     display: flex;
