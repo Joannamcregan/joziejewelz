@@ -155,6 +155,7 @@ body.sepia div.book-info{
 .see-more, .see-less{
     text-align: right;
     text-decoration: underline;
+    cursor: pointer;
 }
 #bio{
     display: flex;
@@ -235,6 +236,7 @@ footer.sepia{
 }
 .selection{
     height: 40px;
+    cursor: pointer;
 }
 .selected-glasses{
     transform: rotate(-10deg);

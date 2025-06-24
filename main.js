@@ -1,4 +1,4 @@
-import u from '/node_modules/umbrellajs/umbrella.esm.js';
+import u from '/umbrella.esm.js';
 const selections = u('.selection');
 const seeMores = u('.see-more');
 const seeLesses = u('.see-less');
