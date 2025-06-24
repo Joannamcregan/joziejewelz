@@ -36,9 +36,9 @@ body.light{
 }
 body.dark{
   --s: 81px; /* control the size*/
-  --c1: #271b10;
+  --c1: #1d1b1a;
   --c2: #1a1818;
-  --c3: #232323;
+  --c3: #1e1e1e;
   
   --p:at 45% 40%,#0000 75%,;
   --g1:conic-gradient(var(--p) var(--c1) 0);
@@ -152,7 +152,7 @@ body.sepia div.book-info{
     background-color: #eadbcb;
     border-radius: 20px;
 }
-.see-more{
+.see-more, .see-less{
     text-align: right;
     text-decoration: underline;
 }
