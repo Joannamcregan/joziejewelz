@@ -237,6 +237,37 @@ body.dark #tiktok_white{
 body.dark #tiktok_black{
     display: none;
 }
+#newsletter-section{
+    margin: 30px auto 40px auto;
+    width: fit-content;
+}
+#newsletter-section div.inline-container{
+    border-radius: 20px !important;
+}
+body.dark #newsletter-section div.inline-container{
+    background: rgb(32, 32, 32) !important;
+    box-shadow: 0 0 10px 6px rgba(179, 0, 255, 0.5),
+    0 0 14px 9px rgba(211, 70, 105, 0.5) !important;
+    color: #e8e8e8 !important;
+}
+body.dark #newsletter-section span, body.dark #newsletter-section div.text-block{
+    color: #e8e8e8 !important;
+    font-family: 'sans', sans-serif;
+}
+#newsletter-section input[type='submit']{
+    font-family: handwritten-text, sans-serif;
+}
+body.dark #newsletter-section input[type='submit']{
+    background: rgb(61, 1, 87);
+}
+@media screen and (max-width: 340px) {
+  .emailoctopus-form-row{
+    min-width: 120px !important;
+  }
+  .inline-container{
+    padding: 5px !important;
+  }
+}
 #bio{
     margin-bottom: 30px;
 }
