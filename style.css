@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'handwritten-heading';
-    src: url('./fonts/Bobogo.otf');
-    font-display: swap;
-}
-@font-face {
     font-family: 'handwritten-text';
     src: url('./fonts/Bobogo.otf');
     font-display: swap;
@@ -13,11 +8,16 @@
     src: url('./fonts/GeosansLight.ttf');
     font-display: swap;
 }
+@font-face {
+    font-family: 'swelly';
+    src: url('./fonts/Swelly-K7GDp.ttf');
+}
 body{
     padding: 20px 20px 50px 20px;
     font-family: 'sans', sans-serif;
     font-weight: 900;
     font-size: 20px;
+    position: relative;
 }
 body.light{
   --s: 81px; /* control the size*/
@@ -75,11 +75,18 @@ body.dark a{
 body.sepia a{
     color:#2c264f;
 }
+strong{
+    font-size: larger;
+}
 .centered-text{
     text-align: center;
 }
 .hidden{
     display: none;
+}
+.handwritten-text{
+    font-family: 'handwritten-text', sans-serif;
+    font-size: 24px;
 }
 #main-heading-section{
     width: fit-content;
@@ -89,7 +96,7 @@ body.sepia a{
     margin: auto;
 }
 #main-heading-section h1{
-    font-family: 'handwritten-heading', serif;
+    font-family: 'handwritten-text', serif;
     font-size: 44px;
     margin-bottom: 5px;
 }
@@ -128,6 +135,12 @@ div.book-info h2{
 div.book-info img{
     display: block;
     margin: auto;
+}
+body.light div.book-info img, body.sepia div.book-info img{
+    box-shadow: 2px 2px 10px #333;
+}
+body.dark div.book-info img{
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
 }
 body.light div.book-info{
     color: #272727;
@@ -202,6 +215,31 @@ body.sepia #bio p{
     background: #eadbcb;
     color: #4f3b26;
 }
+#socials-section{
+    display: flex;
+    width: fit-content;
+    margin: 10px auto;
+    align-content: baseline;
+    justify-content: center;
+}
+#socials-section p{
+    padding: 0px;
+}
+body.light #tiktok_black, body.sepia #tiktok_black{
+    display: block;
+}
+body.light #tiktok_white, body.sepia #tiktok_white{
+    display: none;
+}
+body.dark #tiktok_white{
+    display: block;
+}
+body.dark #tiktok_black{
+    display: none;
+}
+#bio{
+    margin-bottom: 30px;
+}
 #bio img{
     border-radius: 50%;
     margin-right: 20px;
@@ -209,6 +247,40 @@ body.sepia #bio p{
 #bio p{
     padding: 10px;
     border-radius: 20px;
+}
+#copyright-section{
+    margin: 10px auto;
+    width: fit-content;
+    font-family: 'swelly', sans-serif;
+}
+#copyright{
+    transform: rotate(-10deg);
+    width: fit-content;
+    font-size: 35px;
+}
+body.light #copyright-section{
+    text-shadow: 
+    0px 0px 3px rgb(142, 255, 255), 
+    0px 0px 7px rgb(179, 221, 253),
+    0px 0px 11px white;
+}
+body.dark #copyright-section{
+    text-shadow: 
+    0px 0px 3px rgb(250, 27, 98), 
+    0px 0px 7px rgb(102, 27, 51),
+    0px 0px 11px rgb(0, 0, 0);
+}
+body.sepia #copyright-section{
+    text-shadow: 
+    0px 0px 3px #e6cdb6, 
+    0px 0px 7px #dccec4,
+    0px 0px 11px #ded5c9;
+}
+#copyright-year{
+    width: fit-content;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    font-size: 45px;
 }
 footer{
     position: fixed;
@@ -222,8 +294,9 @@ footer.light{
     box-shadow: 0px -4px 3px rgba(247, 214, 222, 0.75)
 }
 footer.dark{
-    background-image: linear-gradient(rgb(255, 50, 102), rgb(252, 155, 114) 30%, rgb(202, 1, 71));
-    box-shadow: 0px -4px 3px rgba(255, 50, 102, 0.75)
+    /* background-image: linear-gradient(rgb(255, 50, 102), rgb(252, 155, 114) 30%, rgb(202, 1, 71));
+    box-shadow: 0px -4px 3px rgba(255, 50, 102, 0.75) */
+    background-image: linear-gradient(rgb(211, 70, 105), rgb(252, 155, 114) 30%, rgb(152, 35, 76));
 }
 footer.sepia{
     background-image: linear-gradient(rgb(224, 169, 153), rgb(241, 186, 163) 30%, rgb(228, 134, 128));
