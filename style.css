@@ -246,19 +246,43 @@ body.dark #tiktok_black{
 }
 body.dark #newsletter-section div.inline-container{
     background: rgb(32, 32, 32) !important;
-    box-shadow: 0 0 10px 6px rgba(179, 0, 255, 0.5),
-    0 0 14px 9px rgba(211, 70, 105, 0.5) !important;
+    box-shadow: 0 0 10px 6px rgba(179, 0, 255, 0.3),
+    0 0 14px 9px rgba(211, 70, 105, 0.3) !important;
     color: #e8e8e8 !important;
+}
+#newsletter-section span, body.dark #newsletter-section div.text-block{
+    font-family: 'sans', sans-serif;
 }
 body.dark #newsletter-section span, body.dark #newsletter-section div.text-block{
     color: #e8e8e8 !important;
-    font-family: 'sans', sans-serif;
+}
+body.sepia #newsletter-section div.inline-container{
+    color: #4f3b26 !important;
+    box-shadow: 0 0 10px 6px #dbc4b7 !important;
+    background-color: #eadbcb !important;
+    border: none !important;
+}
+body.sepia #newsletter-section span, body.dark #newsletter-section div.text-block{
+    color: #4f3b26 !important;
 }
 #newsletter-section input[type='submit']{
     font-family: handwritten-text, sans-serif;
 }
 body.dark #newsletter-section input[type='submit']{
-    background: rgb(61, 1, 87);
+    background: rgb(76, 1, 108);
+}
+body.dark #newsletter-section input[type="email"]{
+    background: black !important;
+    border: solid #e8e8e8 2px;
+    color: #e8e8e8 !important;
+}
+body.sepia #newsletter-section input[type='submit']{
+    background: #e0a999;
+}
+body.sepia #newsletter-section input[type="email"]{
+    background: #f9ebde !important;
+    border: solid black 1px;
+    color: #4f3b26 !important;
 }
 @media screen and (max-width: 340px) {
   .emailoctopus-form-row{
