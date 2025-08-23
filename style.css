@@ -19,6 +19,11 @@ body{
     font-size: 20px;
     position: relative;
 }
+@media screen and (max-width: 480px) {
+    body{
+        padding: 20px 5px 50px 5px;
+    }
+}
 body.light{
   --s: 81px; /* control the size*/
   --c1: #ededed;
@@ -218,12 +223,24 @@ body.sepia #bio p{
 #socials-section{
     display: flex;
     width: fit-content;
-    margin: 10px auto;
+    margin: 0px auto 10px auto;
     align-content: baseline;
     justify-content: center;
+    transform: translateX(-40%);
 }
 #socials-section p{
     padding: 0px;
+    margin: 0px -20px 0px 0px;
+}
+@media screen and (max-width: 460px) {
+  #socials-section{
+        max-width: 100px;
+        flex-wrap: wrap;
+    }
+  #socials-section p{
+        padding: 0px;
+        margin: 0px -10px -30px 0px;
+    }
 }
 body.light #tiktok_black, body.sepia #tiktok_black{
     display: block;
@@ -250,19 +267,27 @@ body.dark #newsletter-section div.inline-container{
     0 0 14px 9px rgba(211, 70, 105, 0.3) !important;
     color: #e8e8e8 !important;
 }
-#newsletter-section span, body.dark #newsletter-section div.text-block{
-    font-family: 'sans', sans-serif;
-}
-body.dark #newsletter-section span, body.dark #newsletter-section div.text-block{
-    color: #e8e8e8 !important;
-}
 body.sepia #newsletter-section div.inline-container{
     color: #4f3b26 !important;
     box-shadow: 0 0 10px 6px #dbc4b7 !important;
     background-color: #eadbcb !important;
     border: none !important;
 }
-body.sepia #newsletter-section span, body.dark #newsletter-section div.text-block{
+body.light #newsletter-section div.inline-container{
+    color: #272727 !important;
+    box-shadow:
+    0 0 10px 6px rgba(228, 184, 247, 0.5),
+    0 0 14px 9px rgba(249, 171, 191, 0.3) !important;
+    background-color: rgb(246, 246, 246) !important;
+    border: none !important;
+}
+#newsletter-section span, body.dark #newsletter-section div.text-block{
+    font-family: 'sans', sans-serif;
+}
+body.dark #newsletter-section span, body.dark #newsletter-section div.text-block{
+    color: #e8e8e8 !important;
+}
+body.sepia #newsletter-section span, body.sepia #newsletter-section div.text-block{
     color: #4f3b26 !important;
 }
 #newsletter-section input[type='submit']{
@@ -273,7 +298,7 @@ body.dark #newsletter-section input[type='submit']{
 }
 body.dark #newsletter-section input[type="email"]{
     background: black !important;
-    border: solid #e8e8e8 2px;
+    border: solid #e8e8e8 1px;
     color: #e8e8e8 !important;
 }
 body.sepia #newsletter-section input[type='submit']{
@@ -307,6 +332,17 @@ body.sepia #newsletter-section input[type="email"]{
     margin: 10px auto;
     width: fit-content;
     font-family: 'swelly', sans-serif;
+    transform: translatex(120%);
+}
+@media screen and (max-width: 460px) {
+    #copyright-section{
+        transform: translatex(80%);
+    }
+}
+@media screen and (max-width: 420px) {
+    #copyright-section{
+        transform: translatex(50%);
+    }
 }
 #copyright{
     transform: rotate(-10deg);
