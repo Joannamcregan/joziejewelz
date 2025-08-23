@@ -75,7 +75,7 @@ body.light a{
     color:rgb(0, 68, 95);
 }
 body.dark a{
-    color:rgb(10, 175, 240);
+    color:rgb(188, 234, 252);
 }
 body.sepia a{
     color:#2c264f;
@@ -302,12 +302,23 @@ body.dark #newsletter-section input[type="email"]{
     color: #e8e8e8 !important;
 }
 body.sepia #newsletter-section input[type='submit']{
-    background: #e0a999;
+    background: #c88e7c;
+    text-shadow: 0px 0px 1px black;
 }
 body.sepia #newsletter-section input[type="email"]{
     background: #f9ebde !important;
     border: solid black 1px;
     color: #4f3b26 !important;
+}
+body.light #newsletter-section input[type="submit"]{
+    background: rgba(234, 201, 248, 0.5) !important;
+    color: #333 !important;
+}
+body.light #newsletter-section input[type="email"]{
+    border: solid black 1px;
+}
+#newsletter-section div.mastfoot{
+    display: none !important;
 }
 @media screen and (max-width: 340px) {
   .emailoctopus-form-row{
