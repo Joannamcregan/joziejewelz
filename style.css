@@ -426,28 +426,117 @@ body.sepia #privacy-policy{
 body.light #privacy-policy{
     background: rgb(241, 240, 240);
 }
-body.dark #privacy-policy--close--dark{
+body.dark .close-button--dark{
     display: block;
 }
-body.dark #privacy-policy--close--sepia, body.dark #privacy-policy--close--light{
+body.dark .close-button--sepia, body.dark .close-button--light{
     display: none;
 }
-body.sepia #privacy-policy--close--sepia{
+body.sepia .close-button--sepia{
     display: block;
 }
-body.sepia #privacy-policy--close--dark, body.sepia #privacy-policy--close--light{
+body.sepia .close-button--dark, body.sepia .close-button--light{
     display: none;
 }
-body.light #privacy-policy--close--light{
+body.light .close-button--light{
     display: block;
 }
-body.light #privacy-policy--close--dark, body.light #privacy-policy--close--sepia{
+body.light .close-button--dark, body.light .close-button--sepia{
     display: none;
 }
 .overlay-close-button{
     position: absolute;
     top: 10px;
     right: 15px;
+}
+#cookie-banner{
+    position: sticky;
+    bottom: 30px;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    height: fit-content;
+    z-index: 2000;
+    padding: 20px;
+}
+body.dark #cookie-banner{
+    background: rgb(0, 55, 55);
+    box-shadow: 0px 0px 10px black, 0px 3px 15px black;
+}
+body.sepia #cookie-banner{
+    background: rgb(252, 178, 151);
+    box-shadow: 0px 0px 10px rgb(45, 45, 45), 0px 3px 15px rgb(45, 45, 45);
+}
+body.light #cookie-banner{
+    background: rgb(215, 216, 255);
+    box-shadow: 0px 0px 10px rgb(90, 90, 90), 0px 3px 15px rgb(90, 90, 90);
+}
+.banner-main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.banner-text{
+    height: fit-content;
+    max-width: fit-content;
+}
+#cookie-banner .buttons-section{
+    display: flex;
+    flex-wrap: nowrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: right;
+    margin-top: 10px;
+}
+#cookie-banner button{
+    width: fit-content;
+    padding: 10px;
+    margin: 0px 20px 0px 0px;
+    font-family: sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+}
+#cookie-banner h2, #cookie-banner span{
+    margin: 0px;
+    max-width: fit-content;
+}
+#cookie-banner p{
+    margin: 10px 0px 40px 0px;
+    max-width: fit-content;
+}
+#cookies--learn-more{
+    text-decoration: underline;
+}
+@media screen and (min-width: 681px) {
+    #cookie-banner .buttons-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    #cookie-banner button{
+        width: 80%;
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .banner-main{
+        flex-wrap: wrap;
+    }
+    #cookie-banner p{
+        margin: 10px 0px;
+    }
+}
+@media screen and (max-width: 420px) {
+    #cookie-banner .buttons-section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+    #cookie-banner button{
+        width: 80%;
+        margin: 10px auto;
+    }
 }
 footer{
     position: fixed;
