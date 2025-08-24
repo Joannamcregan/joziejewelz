@@ -4,6 +4,10 @@ const seeMores = u('.see-more');
 const seeLesses = u('.see-less');
 const body = u('body');
 const footer = u('footer');
+const closeButtons = u('.overlay-close-button');
+const privacyPolicyLink = u('#privacy-policy-link');
+const privacyPolicy = u('#privacy-policy');
+
 selections.on('click', (e)=>{
     const selected = u(e.target);
     selections.removeClass('selected-glasses');
@@ -25,3 +29,18 @@ seeLesses.on('click', (e)=>{
     u(e.target).parent('.description-text').find('.see-more').removeClass('hidden');
     u(e.target).addClass('hidden');
 });
+closeButtons.on('click', (e)=>{
+    const parentDiv = u(e.target).parent('div').parent('div');
+    parentDiv.addClass('fade-closed');
+    setTimeout(()=>{
+        parentDiv.addClass('hidden');
+        parentDiv.removeClass('fade-closed');
+    }, 1000)
+})
+privacyPolicyLink.on('click', (e)=>{
+    privacyPolicy.addClass('fade-open');
+    privacyPolicy.removeClass('hidden');
+    setTimeout(()=>{
+        privacyPolicy.removeClass('fade-open');
+    }, 1000)
+})

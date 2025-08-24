@@ -344,9 +344,9 @@ body.light #newsletter-section input[type="email"]{
     margin: 10px auto;
     width: fit-content;
     font-family: 'swelly', sans-serif;
-    transform: translatex(120%);
-}
-@media screen and (max-width: 460px) {
+    /* transform: translatex(120%); */
+ }
+/* @media screen and (max-width: 460px) {
     #copyright-section{
         transform: translatex(80%);
     }
@@ -355,7 +355,7 @@ body.light #newsletter-section input[type="email"]{
     #copyright-section{
         transform: translatex(50%);
     }
-}
+}  */
 #copyright{
     transform: rotate(-10deg);
     width: fit-content;
@@ -426,6 +426,24 @@ body.sepia #privacy-policy{
 body.light #privacy-policy{
     background: rgb(241, 240, 240);
 }
+body.dark #privacy-policy--close--dark{
+    display: block;
+}
+body.dark #privacy-policy--close--sepia, body.dark #privacy-policy--close--light{
+    display: none;
+}
+body.sepia #privacy-policy--close--sepia{
+    display: block;
+}
+body.sepia #privacy-policy--close--dark, body.sepia #privacy-policy--close--light{
+    display: none;
+}
+body.light #privacy-policy--close--light{
+    display: block;
+}
+body.light #privacy-policy--close--dark, body.light #privacy-policy--close--sepia{
+    display: none;
+}
 .overlay-close-button{
     position: absolute;
     top: 10px;
@@ -470,4 +488,26 @@ footer.sepia{
   div.book-info{
     padding: 5px 10px 10px 10px;
   }
+}
+.fade-closed{
+    animation: fade-out 1s forwards;
+}
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.fade-open{
+    animation: fade-in 1s forwards;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
