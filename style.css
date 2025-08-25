@@ -88,7 +88,7 @@ strong{
     text-align: center;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
 .handwritten-text{
     font-family: 'handwritten-text', sans-serif;
@@ -496,6 +496,14 @@ body.light #cookie-banner{
     font-size: 24px;
     font-weight: 700;
     background: transparent;
+}
+body.sepia #cookie-banner button{
+    color: #4f3b26;
+    border: solid #4f3b26 2px;
+}
+body.dark #cookie-banner button{
+    color: rgb(221, 221, 221);
+    border: solid rgb(221, 221, 221) 2px;
 }
 #cookie-banner h2, #cookie-banner span{
     margin: 0px;
