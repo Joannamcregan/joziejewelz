@@ -407,23 +407,28 @@ body.light #policy-section p{
     box-shadow: 0px 0px 3px rgba(255, 212, 194, 0.7), 0px 0px 7px rgba(255, 212, 194, 0.7), 0px 0px 10px rgba(253, 235, 171, 0.5);
 
 }
-#privacy-policy{
+.policy-overlay{
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 1100;
     overflow-y: scroll;
     padding: 10px 20px 100px 20px;
 }
-body.dark #privacy-policy{
+#privacy-policy{
+    z-index: 1100;
+}
+#cookie-policy{
+    z-index: 4000;
+}
+body.dark .policy-overlay{
     background: rgb(33, 33, 33);
 }
-body.sepia #privacy-policy{
+body.sepia .policy-overlay{
     background: #e5d4c3;
 }
-body.light #privacy-policy{
+body.light .policy-overlay{
     background: rgb(241, 240, 240);
 }
 body.dark .close-button--dark{
@@ -449,14 +454,17 @@ body.light .close-button--dark, body.light .close-button--sepia{
     top: 10px;
     right: 15px;
 }
+#cookie-banner-container{
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    z-index: 3000;
+}
 #cookie-banner{
-    position: sticky;
-    bottom: 30px;
     max-width: 800px;
     display: block;
     margin: auto;
     height: fit-content;
-    z-index: 2000;
     padding: 20px;
 }
 body.dark #cookie-banner{
@@ -505,9 +513,14 @@ body.dark #cookie-banner button{
     color: rgb(221, 221, 221);
     border: solid rgb(221, 221, 221) 2px;
 }
-#cookie-banner h2, #cookie-banner span{
+#cookie-banner h2{
     margin: 0px;
     max-width: fit-content;
+}
+#cookie-banner span{
+    margin: 0px;
+    max-width: fit-content;
+    text-decoration: underline;
 }
 #cookie-banner p{
     margin: 10px 0px 40px 0px;
@@ -552,6 +565,7 @@ footer{
     left: 0;
     right: 0;
     padding: 0;
+    z-index: 2000;
 }
 footer.light{
     background-image: linear-gradient(rgb(247, 217, 214), rgb(249, 238, 223) 30%, rgb(247, 214, 222));
