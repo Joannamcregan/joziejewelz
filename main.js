@@ -13,6 +13,7 @@ const cookiesLearnMore = u('.cookies--learn-more');
 const rejectCookies = u('#reject-cookies');
 const acceptCookies = u('#accept-cookies');
 const newsletterSection = u('#newsletter-section');
+let cookiesAccepted = false;
 
 rejectCookies.on('click', ()=>{
     cookieBanner.addClass('fade-closed');
@@ -23,11 +24,19 @@ rejectCookies.on('click', ()=>{
 })
 
 acceptCookies.on('click', ()=>{
-    const newsletterScript = document.createElement('script');
-    newsletterScript.src = 'https://eocampaign1.com/form/a7bb2ba6-7f63-11f0-83c1-b7699d22af41.js';
-    newsletterScript.async = true;
-    newsletterScript.setAttribute('data-form', 'a7bb2ba6-7f63-11f0-83c1-b7699d22af41');
-    newsletterSection.append(newsletterScript);
+    if (cookiesAccepted == false){
+        cookiesAccepted = true;
+        const newsletterScript = document.createElement('script');
+        newsletterScript.src = 'https://eocampaign1.com/form/a7bb2ba6-7f63-11f0-83c1-b7699d22af41.js';
+        newsletterScript.async = true;
+        newsletterScript.setAttribute('data-form', 'a7bb2ba6-7f63-11f0-83c1-b7699d22af41');
+        newsletterSection.append(newsletterScript);
+        cookieBanner.addClass('fade-closed');
+        setTimeout(()=>{
+            cookieBanner.addClass('hidden');
+            cookieBanner.removeClass('fade-closed');
+        }, 1000);
+    }
 })
 
 cookiesLearnMore.on('click', ()=>{

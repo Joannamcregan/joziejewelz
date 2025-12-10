@@ -105,6 +105,7 @@ strong{
     font-family: 'handwritten-text', serif;
     font-size: 44px;
     margin-bottom: 5px;
+    max-width: 800px;
 }
 #main-heading-section p{
     text-align: right;
@@ -462,6 +463,7 @@ body.light .close-button--dark, body.light .close-button--sepia{
 }
 #cookie-banner{
     max-width: 800px;
+    position: relative;
     display: block;
     margin: auto;
     height: fit-content;
@@ -504,6 +506,7 @@ body.light #cookie-banner{
     font-size: 24px;
     font-weight: 700;
     background: transparent;
+    cursor: pointer;
 }
 body.sepia #cookie-banner button{
     color: #4f3b26;
