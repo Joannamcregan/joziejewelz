@@ -463,6 +463,7 @@ body.light .close-button--dark, body.light .close-button--sepia{
 }
 #cookie-banner{
     max-width: 800px;
+    width: 80vw;
     position: relative;
     display: block;
     margin: auto;
@@ -560,6 +561,9 @@ body.dark #cookie-banner button{
     #cookie-banner button{
         width: 80%;
         margin: 10px auto;
+    }
+    .banner-main{
+        margin-top: 10px;
     }
 }
 footer{
