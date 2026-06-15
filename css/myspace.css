@@ -1,0 +1,370 @@
+body.myspace{
+  --s: 40px; /* control the size*/
+  --c1: #cc2b99;
+  --c2: #cc2b89;
+  --c3: #b3318c;
+  
+  --p:at 45% 40%,#0000 75%,;
+  --g1:conic-gradient(var(--p) var(--c1) 0);
+  --g2:conic-gradient(var(--p) var(--c2) 0);
+  background:
+    var(--g1),var(--g2) calc(2*var(--s)) 0,
+    var(--g2) calc(3*var(--s)) var(--s),
+    var(--g1) var(--s) var(--s) var(--c3);
+  background-size: calc(4*var(--s)) calc(2*var(--s));
+  padding: 0px 20px 20px 20px;
+  position: relative;
+  border: solid rgba(255, 255, 255, 0) 1px;
+}
+body.myspace header{
+    background: rgb(56, 10, 48);
+    border-left: double #b3318c 15px;
+    border-bottom: double #b3318c 15px;
+    border-right: double #b3318c 15px;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    position: absolute;
+    top: -1px;
+    right: 20px;
+}
+body.myspace header nav{
+    display: block;
+}
+body.myspace header div.header-top-section, body.myspace header div.header-bottom-section{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body.myspace header a, body.myspace header span{
+    transform: rotate(0deg);
+    color: rgb(255, 198, 185);
+    opacity: 1;
+}
+body.myspace div.header-top-section a, body.myspace div.header-top-section span{
+    padding: 20px 10px 10px 10px;
+}
+body.myspace div.header-bottom-section a, body.myspace div.header-bottom-section span{
+    padding: 10px 10px 20px 10px;
+}
+#myspace-main{
+    display: grid;
+    grid-template-areas: 
+    "basicInfo jozieJewelzWrites jozieJewelzWrites"
+    "myspaceSection0 myspaceSection1 myspaceSection1"
+    "myspaceSection0 myspaceSection1 myspaceSection1"
+    "myspaceSection0 myspaceSection1 myspaceSection1";
+    max-width: 1000px;
+    margin: 80px auto;
+    padding-bottom: 200px;
+}
+#mspace-section-0{
+    grid-area: myspaceSection0;
+}
+#myspace-section-1{
+    grid-area: myspaceSection1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-content:start;
+}
+#glitter-jozie-jewelz-writes{
+    grid-area: jozieJewelzWrites;
+    margin: auto;
+}
+#glitter-jozie-jewelz-writes img{
+    margin-top: 40px;
+}
+#basic-info{
+    background: rgb(56, 10, 48);
+    border: double #b3318c 15px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 0px;
+    width: fit-content;
+    grid-area: basicInfo;
+}
+#basic-info h1{
+    margin: 0px;
+}
+#basic-info img{
+    width: 200px;
+    height: auto;
+}
+#basic-info p{
+    margin: 5px 0px;
+    text-align: right;
+}
+#myspace-main iframe{
+    width: 230px;
+    height: 200px;
+    border: solid #cc2b89 10px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px 0px;
+}
+#myspace-main #contact-info{
+    background: rgb(56, 10, 48);
+    border: solid #b3318c 5px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px 0px;
+    width: fit-content;
+}
+#contact-info h2, #contact-info p{
+    margin: 10px;
+}
+#contact-info .glitter-graphic{
+    margin: 0px auto 10px auto;
+    width: fit-content;
+    display: block;
+}
+#newsletter-section{
+    border: double #b3318c 15px;
+    background: rgb(56, 10, 48);
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    margin: 10px 0px;
+    width: fit-content;
+}
+#newsletter-section div.inline-container{
+    background: rgb(56, 10, 48) !important;
+    border: none !important;
+}
+#newsletter-section div.inline-container h1, #newsletter-section div.inline-container div{
+    color: rgb(255, 198, 185) !important;
+    font-weight: 500;
+}
+#newsletter-section input[type="submit"]{
+    background: #cc2b89 !important;
+    font-family: 'handwritten-text', serif;
+}
+#newsletter-section div.mastfoot{
+    display: none !important;
+}
+#myspace-main .glitter-text{
+    width: fit-content;
+}
+#top-friends{
+    background: rgb(56, 10, 48);
+    border: solid #b3318c 5px;
+    color: rgb(255, 198, 185);
+    box-shadow: 0px 0px 10px black;
+    width: 550px;
+    height: fit-content;
+    padding: 10px;
+    margin: 10px 0px;
+}
+#top-friends h2{
+    text-align: right;
+    margin: 0px 10px;
+}
+#top-friends-containter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 270px;
+}
+#top-friends img{
+    width: 125px;
+    height: auto;
+}
+#about-me{
+    max-width: 500px;
+    height: fit-content;
+    border: solid #cc2b89 10px;
+    box-shadow: 0px 0px 10px black;
+    margin: 20px 0px;
+    background: rgb(56, 10, 48);
+    color: rgb(255, 198, 185);
+    padding: 20px 20px 10px 20px;
+}
+#about-me h2{
+    margin: 0px;
+}
+#about-me a{
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
+}
+@media screen and (max-width: 950px) {
+    #top-friends{
+        width: 450px;
+    }
+    #top-friends img{
+        width: 100px;
+    }
+    #about-me{
+        width: 420px;
+    }
+}
+@media screen and (max-width: 870px) {
+    #myspace-section-1{
+        justify-content: center;
+    }
+    #top-friends{
+        width: 220px;
+        height: 480px;
+    }
+    #top-friends img{
+        padding-top: 10px;
+    }
+    #about-me{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #glitter-jozie-jewelz-writes img{
+        width: 250px;
+    }
+    #about-me{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 850px) {
+    #basic-info{
+        margin: 40px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 700px) {
+    #myspace-main{
+        display: grid;
+        grid-template-areas: 
+        "basicInfo"
+        "jozieJewelzWrites"
+        "myspaceSection0"
+        "myspaceSection1";
+        max-width: 1000px;
+        margin: 120px auto;
+        padding-bottom: 200px;
+    }
+    #basic-info{
+        margin: 0px;
+    }
+    #glitter-jozie-jewelz-writes{
+        margin: 20px 20px 20px 100px;
+    }
+    #glitter-jozie-jewelz-writes img{
+        margin-top: 0px;
+    }
+    #myspace-main iframe{
+        display: block;
+        margin: 20px auto;
+    }
+    #myspace-main #contact-info{
+        display: block;
+        margin: 30px 20px 20px 280px;
+    }
+    #top-friends{
+        width: 450px;
+        height: fit-content;
+    }
+    #about-me{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #myspace-main #contact-info{
+        margin: 30px 20px 20px 200px;
+    }
+}
+@media screen and (max-width: 555px) {
+    body.myspace header nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    body.myspace header div.header-top-section, body.myspace header div.header-bottom-section{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #basic-info{
+        margin: 40px 0px 0px 0px;
+    }
+}
+@media screen and (max-width: 550px) {
+    #myspace-main #contact-info{
+        margin: 30px 20px 20px 100px;
+    }
+    #top-friends{
+        width: 270px;
+        height: 580px;
+    }
+    #top-friends img{
+        padding-top: 10px;
+        width: 125px;
+    }
+    #about-me{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px){
+    body.myspace nav a{
+        font-size: 26px;
+    }
+    #glitter-jozie-jewelz-writes{
+        margin: 20px auto;
+    }
+    #basic-info{
+        margin: 20px 0px 0px 0px;
+    }
+    #myspace-main #contact-info{
+        margin: 30px auto 20px auto;
+    }
+    #newsletter-section .eo-form-wrapper{
+        min-width: 200px !important;
+    }
+    #top-friends{
+        width: 220px;
+        height: 480px;
+    }
+    #top-friends img{
+        padding-top: 10px;
+        width: 100px;
+    }  
+}
+body.myspace footer{
+    background: rgb(56, 10, 48);
+    border-left: double #b3318c 15px;
+    border-top: double #b3318c 15px;
+    border-right: double #b3318c 15px;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 20px 0px;
+    margin: 0px;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    color: rgb(255, 198, 185);
+    display: block;
+}
+#myspace-policy-section{
+    font-family: 'amatic', serif;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#myspace-policy-section #privacy-policy-link{
+    padding: 0px;
+    color: rgb(255, 198, 185);
+}
+#myspace-copyright-section{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    font-family: 'amatic', serif;
+    font-size: 22px;
+    text-align: center;
+}
