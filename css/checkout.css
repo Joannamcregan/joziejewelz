@@ -20,3 +20,85 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__total{
 [data-theme="light"] .wc-block-cart__submit a.wc-block-components-button{
     background: rgb(200, 234, 186) !important;
 }
+[data-theme="sepia"] .wc-block-cart__submit a.wc-block-components-button{
+    background: rgb(243, 167, 201) !important;
+}
+[data-theme="dark"] .wc-block-cart__submit a.wc-block-components-button{
+    background: rgb(94, 0, 35) !important;
+}
+/* checkout------------------------------------------------------------------------------ */
+.wp-block-woocommerce-checkout .wc-block-checkout__guest-checkout-notice{
+    font-size: 20px !important;
+}
+.wc-blocks-components-select .wc-blocks-components-select__select{
+    font-size: 20px !important;
+}
+.wp-block-woocommerce-checkout-order-summary-block .wc-block-components-product-name{
+    font-size: 20px !important;
+}
+.wp-block-woocommerce-checkout-order-summary-block{
+    font-size: 20px !important;
+}
+.wp-block-woocommerce-checkout-order-summary-block{
+    font-size: 20px !important;
+}
+.wp-block-woocommerce-checkout-order-summary-block{
+    font-size: 20px !important;
+}
+.wp-block-woocommerce-checkout-order-summary-block{
+    font-size: 20px !important;
+}
+.wc-block-components-totals-wrapper{
+    font-size: 20px !important;
+}
+.wc-block-components-checkbox label{
+    font-size: 20px !important;
+}
+.wc-block-checkout__terms{
+    font-size: 20px !important;
+}
+.wc-block-checkout__actions .wc-block-checkout__actions_row{
+    font-size: 24px !important;
+}
+[data-theme="light"] .wc-block-checkout__actions .wc-block-components-button, .wc-block-components-totals__coupon-form .wc-block-components-button{
+    background: rgb(200, 234, 186) !important;
+    color: black;
+}
+[data-theme="sepia"] .wc-block-checkout__actions .wc-block-components-button, .wc-block-components-totals__coupon-form .wc-block-components-button{
+    background: rgb(243, 167, 201) !important;
+    color: black;
+}
+[data-theme="dark"] .wc-block-checkout__actions .wc-block-components-button, .wc-block-components-totals__coupon-form .wc-block-components-button{
+    background: rgb(94, 0, 35) !important;
+    color: white;
+}
+[data-theme="dark"] .wc-blocks-components-select .wc-blocks-components-select__container{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-blocks-components-select .wc-blocks-components-select__select{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-blocks-components-select .wc-blocks-components-select__expand{
+    fill: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-block-components-text-input input[type=text]{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-block-components-text-input input[type=tel]{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-block-components-text-input input[type=email]{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+[data-theme="dark"] .wc-block-components-textarea{
+    background: black !important;
+    color: rgb(239, 239, 239) !important;
+}
+.wc-block-components-textarea{
+    font-size: 20px !important
+}

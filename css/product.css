@@ -117,7 +117,7 @@ div.single-product-purchase-section button{
     color: white;
 }
 .woocommerce-message{
-    width: 240px;
+    width: 180px;
     height: fit-content;
     margin: 20px auto;
     text-align: center;
@@ -139,6 +139,24 @@ div.single-product-purchase-section button{
     -0px 2px 2px rgba(92, 92, 92, 0.2),
     0px 2.5px 2px rgba(92, 92, 92, 0.2);
     border-top: none !important;
+}
+[data-theme="sepia"] .woocommerce-message{
+    background: rgb(222, 147, 181) !important;
+    box-shadow: 
+    1.5px -0.5px 2px rgba(79, 79, 79, 0.2),
+    -0px 2.5px 2px rgba(79, 79, 79, 0.2),
+    0px 2.5px 2px rgba(79, 79, 79, 0.2);
+    border-top: none !important;
+    color: black;
+}
+[data-theme="dark"] .woocommerce-message{
+    background: rgb(94, 0, 35) !important;
+    box-shadow: 
+    1.5px -0.5px 2px rgba(7, 7, 7, 0.6),
+    -0px 2.5px 2px rgba(7, 7, 7, 0.6),
+    0px 2.5px 2px rgba(7, 7, 7, 0.6);
+    border-top: none !important;
+    color: white;
 }
 div#other-retailers-section{
     font-size: 18px;
