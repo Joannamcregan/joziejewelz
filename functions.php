@@ -7,6 +7,7 @@ function site_files(){
     wp_enqueue_script('custom-js', get_theme_file_uri('/build/index.js'), array('umbrella-js'), '1.0', true);
     wp_enqueue_style('main', get_stylesheet_directory_uri() . '/css/main.css', false, '', 'all');
     wp_enqueue_style('singles', get_stylesheet_directory_uri() . '/css/singles.css', false, '', 'all');
+    wp_enqueue_style('checkout', get_stylesheet_directory_uri() . '/css/checkout.css', false, '', 'all');
     wp_enqueue_style('myspace', get_stylesheet_directory_uri() . '/css/myspace.css', false, '', 'all');
     wp_enqueue_style('product', get_stylesheet_directory_uri() . '/css/product.css', false, '', 'all');
     wp_localize_script('custom-js', 'customData', array(

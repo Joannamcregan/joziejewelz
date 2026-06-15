@@ -90,6 +90,11 @@ div.single-product-purchase-section input[type="number"]{
 [data-theme="sepia"] .single-product-purchase-section input[type="number"]{
     background: rgb(252, 231, 225);
 }
+[data-theme="dark"] .single-product-purchase-section input[type="number"]{
+    background: rgb(0, 0, 0);
+    color: rgb(224, 224, 224);
+    border: none;
+}
 div.single-product-purchase-section button{
     text-align: center;
     margin: 10px auto;
@@ -97,11 +102,43 @@ div.single-product-purchase-section button{
     border-radius: 20px;
     padding: 5px 10px;
 }
+div.single-product-purchase-section button{
+    padding: 10px 20px;
+}
 [data-theme="light"] div.single-product-purchase-section button{
     background: rgb(210, 210, 243);
 }
 [data-theme="sepia"] div.single-product-purchase-section button{
     background: rgb(216, 193, 241);
+}
+[data-theme="dark"] div.single-product-purchase-section button{
+    background: rgb(59, 0, 122);
+    border: none;
+    color: white;
+}
+.woocommerce-message{
+    width: 240px;
+    height: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    transform: rotate(-2deg);
+    font-family: 'handwritten-text', sans-serif;
+}
+.woocommerce-message .button{
+    display: block !important;
+    margin: 10px auto !important;
+    float: none !important;
+}
+.woocommerce-message::before{
+    display: none !important
+}
+[data-theme="light"] .woocommerce-message{
+    background: rgb(200, 234, 186) !important;
+    box-shadow: 
+    1px -0.5px 2px rgba(92, 92, 92, 0.2),
+    -0px 2px 2px rgba(92, 92, 92, 0.2),
+    0px 2.5px 2px rgba(92, 92, 92, 0.2);
+    border-top: none !important;
 }
 div#other-retailers-section{
     font-size: 18px;
@@ -375,8 +412,10 @@ div.preview-overlay--close{
     max-width: 95%;
     text-align: right;
     margin: auto;
-    padding-right: 40px;
     height: fit-content;
+}
+div.preview-overlay--close p{
+    padding-right: 40px;
 }
 [data-theme="light"] .single-product--preview-overlay{
     background: #f6f2f2;
